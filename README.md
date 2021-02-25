@@ -8,19 +8,21 @@ Elle a pour but la vulgarisation en aérospatiale et en astrophysique.
 Etant visible sur Instagram, le site vise en particulier les personnes n'ayant pas ce réseau social. (personnes plus agées)
 
 Dans les explications de leurs capsules sur instagram, ils utilisent leurs avatars ainsi que des phylactères pour faire passer les informations. 
-Au dessus de chacunes des slides se trouve aussi une petite fusée. 
+Au dessus de chacune des slides se trouve aussi une petite fusée. 
 
 En arrivant sur le site de Easy Spacy, on tombe sur une petite illustration qui nous mets dans le thème. Celle ci est faite en flat design
 avec des effets de superposition et de profondeur (Moodboard).
 Une barre verticale est présente aussi à gauche de l'écran et y restera tout au long de la page. Au milieu de la barre, il y aura cette petite fusée qu'ils aiment mettre sur leurs posts. Cela fait un lien entre le site et instagram.
 
-Pour le coté responsive, une fois sur le telephone cette barre restera présente mais plus à la verticale. elle se retrouverait au dessus de la page à l'horizontale sous le logo et le menu
+Pour le coté responsive, une fois sur le telephone cette barre restera présente mais plus à la verticale. Elle se retrouverait au dessus de la page à l'horizontale sous le logo et le menu
 
 Sur cette page, en plus de l'illustration, on a le logo actuel de Easy Spacy, la barre de navigation, un lien vers leur page Instagram et une barre de recherche.
 La navigation reprend les pages suivantes: la page d'accueil, la page "à propos", une page avec des news et enfin la page de contact.
 La navigation n'est pas cachée derriere un burger menu pour faciliter l'utilisateur a trouver ce qu'il recherche. De plus, une couleur vient surligner le bouton de la page dans laquelle on est.
 Cela montre ainsi la page courante. Par exemple, l'utilisateur décide d'appuyer sur la page de contact, le bouton se surligne donc d'une couleur.
 
+Dans la barre de recherche, on peut y inscrire des mots clé qui nous mèneront vers certaines capsules. Pour cela, il y aura des indications afin d'aider l'utilisateur dans sa recherche. 
+En cliquant sur la barre, une demi-page se déroule par-dessus les autres avec la barre de recherche (Moodboard). Un bouton fermer est disponible pour retourner au site ou il est possible aussi de cliquer en dehors de cette page. 
 
 En scrollant, on arrive à la section suivante qui reprend les capsules d'informations. Une partie de cette section est visible sur la landing page
 pour montrer qu'il y a moyen de scroller et que la page ne s'arrete pas là. (Moodboard) Les capsules se trouvent directement sous la landing page pour plus de faciliter.
