@@ -22,18 +22,18 @@ La navigation n'est pas cachée derriere un burger menu pour faciliter l'utilisa
 Cela montre ainsi la page courante. Par exemple, l'utilisateur décide d'appuyer sur la page de contact, le bouton se surligne donc d'une couleur.
 
 Dans la barre de recherche, on peut y inscrire des mots clé qui nous mèneront vers certaines capsules. Pour cela, il y aura des indications afin d'aider l'utilisateur dans sa recherche. 
-En cliquant sur la barre, une demi-page se déroule par-dessus les autres avec la barre de recherche (Moodboard). Un bouton fermer est disponible pour retourner au site ou il est possible aussi de cliquer en dehors de cette page. 
+En cliquant sur la barre, une demi-page se déroule par-dessus les autres avec la barre de recherche (Moodboard). Un bouton "fermer" est disponible pour retourner au site mais il est possible aussi de cliquer en dehors de cette page. 
 
 En scrollant, on arrive à la section suivante qui reprend les capsules d'informations. Une partie de cette section est visible sur la landing page
-pour montrer qu'il y a moyen de scroller et que la page ne s'arrete pas là. (Moodboard) Les capsules se trouvent directement sous la landing page pour plus de faciliter.
-Dans cette section, les capsules sont disposées comme sur instagram c'est-à-dire qu'elles sont de format carrée et disposée en carré de 3x3. 
+pour montrer qu'il y a moyen de scroller et que la page ne s'arrete pas là. (Moodboard) Les capsules se trouvent directement sous la landing page pour plus de facilité.
+Dans cette section, les capsules sont disposées comme sur instagram c'est-à-dire qu'elles sont de format carrée et disposées en ligne de 3. 
 Le titre accompagnant chaque capsule d'information est présent sous chaque photo.
-Au survol de la zone photo/texte il y a une petite animation. Une couleur vient surligner le titre de la capsule. Cela fait un rappel avec le bouton de la navigation qui lui aussi est coloré
+Au survol de la zone photo/texte il y a une petite animation. Une couleur vient surligner le titre de la capsule. Cela fait un rappel avec le bouton de la navigation qui lui aussi est coloré.
 De base, seulement quelques capsules sont visibles. Il suffit d'appuyer sur "en voir plus" pour découvrir les suivantes.
 
 Au clic d'une capsule, on arrive sur la page de l'information en elle-même. 
-Les photos sont disposées les une apres les autres, quand la souris se situe sur la zone des photos et qu'on scroll, les photos défilent à l'horizontale.
-Les photos suffisent à elles-mêmes pour comprendre l'information la plus importante mais sous celles-ci se trouve quand meme un texte plus détaillé. 
+Les photos sont disposées les unes après les autres, quand la souris se situe sur la zone des photos et qu'on scroll, les photos défilent à l'horizontale.
+Les photos suffisent à elles-mêmes pour comprendre l'information la plus importante mais sous celles-ci se trouve quand même un texte plus détaillé. 
 Un bouton retour est aussi prévu afin de revenir sur nos pas et de retrouver toutes les capsules. 
 
 Sur cette page, on a aussi un CTA qui mène à la capsule de la page instagram et vice-versa, le lien de la page du site se trouve dans la description sur Instagram. 
@@ -46,7 +46,7 @@ La page "à propos" reprend la biographie respective de Sarah Joiret et Léo Cot
 Pour les mettre en scène, la biographie serait dans une bulle de discussion comme si chacun se présentait. 
 Il y aurait aussi une petite description de leur initiative Easy Spacy, un lien vers la page Instagram 
 
-En ce qui concerne la page de contact, elle serait divisée en 2 zones. Une zone avec les informations de contact et l'autre zone avec le formulaire.
+En ce qui concerne la page de contact, elle serait divisée en 2 zones. (Moodboard) Une zone avec les informations de contact et l'autre zone avec le formulaire.
 Sur cette page, il y aura aussi les avatars mis en scène en bas de page avec une bulle où ils diront "Avez-vous des questions ?".
 
 
