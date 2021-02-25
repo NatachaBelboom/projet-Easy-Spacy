@@ -18,7 +18,7 @@ Pour le coté responsive, une fois sur le telephone cette barre restera présent
 
 Sur cette page, en plus de l'illustration, on a le logo actuel de Easy Spacy, la barre de navigation, un lien vers leur page Instagram et une barre de recherche.
 La navigation reprend les pages suivantes: la page d'accueil, la page "à propos", une page avec des news et enfin la page de contact.
-La navigation n'est pas cachée derriere un burger menu pour faciliter l'utilisateur a trouver ce qu'il recherche. De plus, une couleur vient surligner le bouton de la page dans laquelle on est.
+La navigation n'est pas cachée derriere un burger menu pour aider l'utilisateur à trouver ce qu'il recherche. De plus, une couleur vient surligner le bouton de la page dans laquelle on est.
 Cela montre ainsi la page courante. Par exemple, l'utilisateur décide d'appuyer sur la page de contact, le bouton se surligne donc d'une couleur.
 
 Dans la barre de recherche, on peut y inscrire des mots clé qui nous mèneront vers certaines capsules. Pour cela, il y aura des indications afin d'aider l'utilisateur dans sa recherche. 
@@ -37,7 +37,7 @@ Les photos suffisent à elles-mêmes pour comprendre l'information la plus impor
 Un bouton retour est aussi prévu afin de revenir sur nos pas et de retrouver toutes les capsules. 
 
 Sur cette page, on a aussi un CTA qui mène à la capsule de la page instagram et vice-versa, le lien de la page du site se trouve dans la description sur Instagram. 
-Cela permet d'avoir de plus ample information si l'on vient du reséau social. Le site internet est donc une version plus complète de l'information que sur la page instagram.
+Cela permet d'avoir de plus amples informations si l'on vient du réseau social. Le site internet est donc une version plus complète de l'information que sur la page instagram.
 
 La page des news liste toutes les nouveautés concernant Easy Spacy. Ca reprend les articles dans la presse, les interviews,... 
 Il y aurait à chaque article, un résumé, une photo, la date et le lien vers l'article en question pour plus de précision. 
