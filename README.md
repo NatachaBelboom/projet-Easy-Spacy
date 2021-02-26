@@ -3,11 +3,19 @@ Eleve à la Haute Ecole de la Province de Liège en Bac 2. Ce projet fait partie
 
 ## Moodboard
 lien du moodboard : https://app.milanote.com/1Ld41c1pCxTo78?p=jx9RuNbGJuV
-## Stratégie
 
+## Présentation du projet 
 Easy Spacy est une initiative créée par Sarah Joiret et Léo Cotteleer.
 Elle a pour but la vulgarisation en aérospatiale et en astrophysique.
+
+## Public cible
 Etant visible sur Instagram, le site vise en particulier les personnes n'ayant pas ce réseau social. (personnes plus agées)
+
+## Cahier des charges
+
+## Plan du site 
+
+## Stratégie (à retravailler)
 
 Dans les explications de leurs capsules sur instagram, ils utilisent leurs avatars ainsi que des phylactères pour faire passer les informations. 
 Au dessus de chacune des slides se trouve aussi une petite fusée. 
