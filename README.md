@@ -133,4 +133,4 @@ Il y a aussi une petite description de l'initiative Easy Spacy
    6. Page de contact
    
 Page divisée en 2 zones. Une zone avec les informations de contact et l'autre zone avec le formulaire.
-Les avatars sont mis en scène en bas de page avec une bulle où ils diront "Avez-vous des questions ?"
+Les avatars sont mis en scène en bas de page avec une bulle où ils diront "Avez-vous des questions ?" 
