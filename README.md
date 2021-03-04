@@ -4,6 +4,7 @@ Eleve à la Haute Ecole de la Province de Liège en Bac 2. Ce projet fait partie
 ## Moodboard
 Lien du moodboard : https://app.milanote.com/1Ld41c1pCxTo78?p=jx9RuNbGJuV
 
+
 ## Présentation du projet 
 Easy Spacy est une initiative créée par Sarah Joiret et Léo Cotteleer.
 Elle a pour but la vulgarisation en aérospatiale et en astrophysique.
