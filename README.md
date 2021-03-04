@@ -113,10 +113,11 @@ En cliquant sur la barre, une demi-page se déroule par-dessus les autres avec l
 
 Au clic d'une capsule, on arrive sur la page de l'information en elle-même. 
 Les photos sont disposées les unes après les autres, quand la souris se situe sur la zone des photos et qu'on scroll, les photos défilent à l'horizontale.
+Un système de flèche pour changer les photos est aussi pensé.
 La photo concernée est un peu plus grande que les autres. En passant d'une photo à l'autre, elles s'agrandissent et rétrécissent.
 Un texte plus détaillé se trouve sous les capsules.
 
-Un bouton retour est aussi prévu afin de revenir sur nos pas et de retrouver toutes les capsules. 
+Un bouton retour est prévu afin de revenir sur nos pas et de retrouver toutes les capsules. 
 Un lien vers la capsule de la page Instagram est aussi présent. 
 
    4. Page des news
@@ -132,4 +133,4 @@ Il y a aussi une petite description de l'initiative Easy Spacy
    6. Page de contact
    
 Page divisée en 2 zones. Une zone avec les informations de contact et l'autre zone avec le formulaire.
-Les avatars sont mis en scène en bas de page avec une bulle où ils diront "Avez-vous des questions ?".
+Les avatars sont mis en scène en bas de page avec une bulle où ils diront "Avez-vous des questions ?"
