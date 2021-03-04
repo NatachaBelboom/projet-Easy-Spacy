@@ -96,10 +96,6 @@ Une fois le menu déplié, les boutons sont listés l'un au dessus de l'autre. U
 L'illustration est faite en flat design avec des effets de superpositions et de profondeurs.
 La barre de recherche est cachée derrière une icône de loupe. Etant sur un écran restreint, il faut optimiser l'espace. C'est en cliquant sur la loupe que le champ de recherche apparait.
 
-utilisation de la fusée?? 
-(Une barre verticale est présente aussi à gauche de l'écran et y restera tout au long de la page. Au milieu de la barre, il y aura cette petite fusée qu'ils aiment mettre sur leurs posts. Cela fait un lien entre le site et instagram.Pour le coté responsive, une fois sur le telephone cette barre restera présente mais plus à la verticale. Elle se retrouverait au dessus de la page à l'horizontale sous le logo et le menu
-)
-
    2. Section des capsules
 
 Une partie de cette section est visible sur la page d'accueil pour que l'utilisateur visualise bien qu'il a la possibilité de scroller.
