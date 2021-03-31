@@ -82,11 +82,6 @@ Elle a pour but la vulgarisation en aérospatiale et en astrophysique.
 * avatars
         
 ## Stratégie 
-Easy Spacy est d'abord visible sur Instagram. La majeure partie des utilisateurs viennnt donc visiter le site à partir de leur téléphone. o
-Il est donc plus intéressant de partir de la version mobile.
-
-Il faut donc imaginer cette stratégie sur un écran de téléphone.
-
 
 ### Page d'accueil 
    1. Présentation
