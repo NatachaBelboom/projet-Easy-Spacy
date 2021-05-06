@@ -128,4 +128,11 @@ Page divisée en 2 zones. Une zone avec les informations de contact et l'autre z
 Les avatars sont mis en scène en bas de page avec une bulle où ils diront "Avez-vous des questions ?" 
 
 ## Wireframe 
+![accueil](https://user-images.githubusercontent.com/73905589/112599489-4b5dee00-8e10-11eb-9d2c-bf6866497254.png)
+![capsule](https://user-images.githubusercontent.com/73905589/112599504-5153cf00-8e10-11eb-94ae-5bb3a4943701.png)
+![capsule 2](https://user-images.githubusercontent.com/73905589/112599542-5e70be00-8e10-11eb-9b76-3b617472e6be.png)
+![news](https://user-images.githubusercontent.com/73905589/112599526-5749b000-8e10-11eb-8e39-ea00b32c0862.png)
+![a propos](https://user-images.githubusercontent.com/73905589/112599563-692b5300-8e10-11eb-923c-c8a9987cd529.png)
+![contact](https://user-images.githubusercontent.com/73905589/112599569-6d577080-8e10-11eb-8cbe-94e5ef6eac1a.png)
+
 
