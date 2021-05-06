@@ -1,0 +1,11 @@
+/*
+
+!/wp-content
+/wp-content/*
+!/wp-content/themes
+wp-content/themes/*
+!/wp-content/themes/easy spacy
+
+!.gitignore
+!README.md
+!notes.md
