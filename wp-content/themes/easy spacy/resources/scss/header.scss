@@ -1,0 +1,26 @@
+header{
+  padding: 25px 123px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo img{
+  width: 100px;
+  height: auto;
+}
+nav.top__menu{
+  display: inline;
+  align-self: center;
+}
+.menu__link__start{
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #002A3D;
+  padding: 0 25px;
+}
+.menu__link__start:nth-child(5){
+  border-right: 2px #002A3D solid;
+}

@@ -1,5 +1,100 @@
 <?php get_header(); ?>
-<main>
-    <h1><?php the_content(); ?></h1>
+<main class="main">
+    <section>
+        <div class="landing_page">
+            <h1 class="sro"><?php the_title(); ?></h1>
+            <img src="<?= dw_asset('img/landing.png')?>" alt="" class="img__landing">
+            <a href="https://www.instagram.com/easyspacy/?hl=fr" class="button__link">Rejoignez-nous sur Instagram</a>
+        </div>
+    </section>
+    <section class="posts__section">
+        <h1>Les capsules les + récentes</h1>
+        <div class="posts__container">
+            <?php
+            $posts = new WP_Query([
+                'post_type' => 'posts',
+                'posts_per_page' => 4,
+                'orderby' => 'date',
+                'order' => 'asc',
+            ]);
+
+            if ($posts->have_posts()) : while ($posts->have_posts()) : $posts->the_post(); ?>
+                <article class="posts">
+                    <div class="post__card">
+                        <div class="post__fig">
+                            <a href="<?php the_permalink(); ?>" class="post__link">
+                                <span class="sro">En savoir plus sur "<?php the_title(); ?>"</span>
+                            </a>
+                            <img <?= dw_the_img_attributes(get_field('cover_img'), ['thumbnail', 'medium', 'large']); ?>
+                                    class="post__img">
+                        </div>
+                        <div class="post__info">
+                            <div class="post__interaction">
+                                <a href="" class="post__like"><img src="<?= dw_asset('img/heart.png')?>" alt="icone de coeur"></a>
+                                <a href="" class="post__comment"><img src="<?= dw_asset('img/comments.png')?>" alt="icone de commentaire"></a>
+                            </div>
+                            <p class="post__difficulty">Difficulté: <?php the_field('difficulty'); ?></p>
+                            <p class="post__date"><?php the_field('date'); ?></p>
+                            <a href="" class="more-info">Lire<img src="<?= dw_asset('img/next.png')?>" alt="icone de fleche"></a>
+                        </div>
+                    </div>
+                </article>
+            <?php endwhile; else: ?>
+                <p class="post__empty">Il n'y a pas encore de capsules</p>
+            <?php endif; ?>
+        </div>
+        <a href="http://easy-spacy.local/capsules/" class="button__link">Toutes les capsules</a>
+    </section>
+
+    <section class="news__section">
+        <h1>A la une</h1>
+        <div class="news__container">
+            <?php
+            $news = new WP_Query([
+                'post_type' => 'news',
+                'posts_per_page' => 3,
+                'orderby' => 'date',
+                'order' => 'asc',
+            ]);
+
+            if ($news->have_posts()) : while ($news->have_posts()) : $news->the_post(); ?>
+                <article class="news">
+                    <div class="new__card">
+                        <div class="new__fig">
+                            <a href="<?php the_permalink(); ?>" class="new__link">
+                                <span class="sro">En savoir plus sur "<?php the_title(); ?>"</span>
+                            </a>
+                            <img <?= dw_the_img_attributes(get_field('cover_img'), ['thumbnail', 'medium', 'large']); ?>
+                                    class="new__img">
+                        </div>
+                        <div class="new__info">
+                            <h2 class="new__title"><?php the_title(); ?></h2>
+                            <p class="new__newspaper"><?php the_field('newspaper-name'); ?></p>
+                            <p class="new__date"><?php the_field('date'); ?></p>
+                            <a href="" class="more-info">Lire<img src="<?= dw_asset('img/next.png')?>" alt="icone de fleche"></a>
+
+                        </div>
+                    </div>
+                </article>
+            <?php endwhile; else: ?>
+                <p class="news__empty">Il n'y a pas encore de news</p>
+            <?php endif; ?>
+        </div>
+        <a href="http://easy-spacy.local/news/" class="button__link">Toutes les news</a>
+    </section>
+
+    <section class="avatars">
+        <img src="<?= dw_asset('img/avatar-homme.svg')?>" alt="">
+        <img src="<?= dw_asset('img/avatar-femme.svg')?>" alt="">
+    </section>
+
+    <section class="small_presentation">
+        <h1 class="presentation__title">Easy Spacy</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. In fermentum posuere urna nec tincidunt praesent semper feugiat. Purus semper eget duis at
+            tellus. Vitae ultricies leo integer malesuada nunc vel risus. Condimentum lacinia quis vel eros. Integer
+            quis auctor elit sed vulputate mi sit. </p>
+        <a href="http://easy-spacy.local/a-propos/" class="button__link">En apprendre plus</a>
+    </section>
 </main>
 <?php get_footer(); ?>

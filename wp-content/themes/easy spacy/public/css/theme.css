@@ -1,1 +1,287 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap);
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  padding: 25px 123px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+nav.top__menu {
+  display: inline;
+  align-self: center;
+}
+
+.menu__link__start {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #002A3D;
+  padding: 0 25px;
+}
+
+.menu__link__start:nth-child(5) {
+  border-right: 2px #002A3D solid;
+}
+
+.end {
+  padding: 30px 123px;
+}
+
+.menu__link__end {
+  font-size: 0.875em;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #002A3D;
+  padding: 0 20px;
+}
+
+.menu__link__end:nth-child(6) {
+  border-right: 2px #002A3D solid;
+}
+
+.logo2 img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.navigation_link {
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram {
+  padding-left: 20px;
+}
+
+.button__link {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+  color: white;
+  background-color: #002A3D;
+  border-radius: 40px;
+  text-align: center;
+  display: inline-block;
+  width: 300px;
+  padding: 15px 0;
+}
+
+.landing_page {
+  text-align: center;
+}
+
+.img__landing {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  margin: 50px 0 27px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-align: left;
+}
+
+.posts__section {
+  padding: 0 123px;
+  text-align: center;
+}
+
+.posts__container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.post__fig img {
+  width: 100%;
+}
+
+.post__info {
+  padding: 25px 25px;
+  box-shadow: 0 10px 20px rgba(172, 172, 172, 0.3);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post__difficulty {
+  padding-bottom: 25px;
+}
+
+.post__date {
+  font-size: 13px;
+}
+
+.more-info {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #002A3D;
+  letter-spacing: 0.2em;
+}
+
+.post__like img, .post__comment img {
+  width: 30%;
+  height: auto;
+  padding-bottom: 25px;
+}
+
+.post__like {
+  margin-right: 15px;
+}
+
+.posts {
+  margin-bottom: 70px;
+}
+
+.news__section {
+  padding: 0 123px;
+  text-align: center;
+}
+
+.news__container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.new__fig img {
+  width: 100%;
+}
+
+.new__info {
+  padding: 25px 30px;
+  box-shadow: 0 10px 20px rgba(172, 172, 172, 0.3);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.new__newspaper, .new__date {
+  font-size: 13px;
+}
+
+.news {
+  margin-bottom: 70px;
+}
+
+.avatars img {
+  width: 10%;
+}
+
+.small_presentation {
+  padding: 30px 123px;
+  background-color: #E9F4F6;
+  text-align: center;
+}
+
+.presentation__title {
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.small_presentation p {
+  text-align: left;
+  width: 900px;
+  margin: 0 auto 30px;
+}
+
+.sro {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
