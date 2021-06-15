@@ -2,7 +2,7 @@
 get_header();?>
 <main>
     <section class="news__section">
-        <h1 class="title">Toutes les news</h1>
+        <h1 class="title" role="heading" aria-level="1">Toutes les news</h1>
         <div class="news__container">
             <?php
             $news = new WP_Query([
@@ -22,7 +22,7 @@ get_header();?>
                                 class="new__img">
                         </div>
                         <div class="new__info">
-                            <h2 class="new__title"><?php the_title(); ?></h2>
+                            <h2 class="new__title" role="heading" aria-level="1"><?php the_title(); ?></h2>
                             <p class="new__newspaper"><?php the_field('newspaper-name'); ?></p>
                             <p class="new__date"><?php the_field('date'); ?></p>
                             <a href="" class="more-info">Lire<img src="<?= dw_asset('img/next.png')?>" alt="icone de fleche"></a>

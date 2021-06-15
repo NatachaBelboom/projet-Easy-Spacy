@@ -2,13 +2,13 @@
 <main class="main">
     <section>
         <div class="landing_page">
-            <h1 class="sro"><?php the_title(); ?></h1>
+            <h1 class="sro" role="heading" aria-level="1"><?php the_title(); ?></h1>
             <img src="<?= dw_asset('img/landing.png')?>" alt="" class="img__landing">
             <a href="https://www.instagram.com/easyspacy/?hl=fr" target="_blank" class="button__link blue">Rejoignez-nous sur Instagram</a>
         </div>
     </section>
     <section class="posts__section">
-        <h1 class="title">Les capsules les + récentes</h1>
+        <h1 class="title" role="heading" aria-level="1">Les capsules les + récentes</h1>
         <div class="posts__container">
             <?php
             $posts = new WP_Query([
@@ -20,6 +20,9 @@
 
             if ($posts->have_posts()) : while ($posts->have_posts()) : $posts->the_post(); ?>
                 <article class="posts">
+                    <h2 class="sro" role="heading" aria-level="2">
+                        <?php the_title(); ?>
+                    </h2>
                     <div class="post__card">
                         <div class="post__fig">
                             <a href="<?php the_permalink(); ?>" class="post__link">
@@ -47,7 +50,7 @@
     </section>
 
     <section class="news__section">
-        <h1 class="title">A la une</h1>
+        <h1 class="title" role="heading" aria-level="1">A la une</h1>
         <div class="news__container">
             <?php
             $news = new WP_Query([
@@ -68,7 +71,7 @@
                                     class="new__img">
                         </div>
                         <div class="new__info">
-                            <h2 class="new__title"><?php the_title(); ?></h2>
+                            <h2 class="new__title" role="heading" aria-level="2"><?php the_title(); ?></h2>
                             <p class="new__newspaper"><?php the_field('newspaper-name'); ?></p>
                             <p class="new__date"><?php the_field('date'); ?></p>
                             <a href="" class="more-info">Lire<img src="<?= dw_asset('img/next.png')?>" alt="icone de fleche"></a>
@@ -84,12 +87,13 @@
     </section>
 
     <section class="avatars">
+        <h2 class="sro" role="heading" aria-level="2">Les avatars</h2>
         <img src="<?= dw_asset('img/avatar-homme.svg')?>" class="imgL" alt="avatar de leo">
         <img src="<?= dw_asset('img/avatar-femme.svg')?>" class="imgS" alt="avatar de sarah">
     </section>
 
     <section class="small_presentation">
-        <h1 class="presentation__title">Easy Spacy</h1>
+        <h2 class="presentation__title" role="heading" aria-level="2">Easy Spacy</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. In fermentum posuere urna nec tincidunt praesent semper feugiat. Purus semper eget duis at
             tellus. Vitae ultricies leo integer malesuada nunc vel risus. Condimentum lacinia quis vel eros. Integer

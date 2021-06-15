@@ -3,7 +3,7 @@ get_header(); ?>
 <main>
 
     <section class="posts__section">
-        <h1 class="title">Toutes les capsules</h1>
+        <h1 class="title" role="heading" aria-level="1">Toutes les capsules</h1>
         <div class="posts__container">
             <?php
             $posts = new WP_Query([

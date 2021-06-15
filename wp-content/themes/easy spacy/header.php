@@ -11,11 +11,12 @@
 </head>
 <body>
 <header class="top">
+    <h1 class="sro">Easy Spacy</h1>
     <a href="http://easy-spacy.local/" class="logo"><img src="<?= dw_asset('img/logo.png') ?>" alt="logo de Easy Spacy"></a>
     <a href="" class="more-info__header"><img src="<?= dw_asset('img/menu.png')?>" alt="icone du menu"></a>
 
     <nav class="top__menu menu" role="navigation">
-        <h1 class="sro">Navigation principale</h1>
+        <h2 class="sro" role="heading" aria-level="2">Navigation principale</h2>
 
         <?php foreach(dw_menu('main') as $link): ?>
             <a href="<?= $link->url; ?>" class="menu__link__start <?=  $link->active ?>"><?= $link->label; ?></a>

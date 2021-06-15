@@ -6,7 +6,6 @@ get_header(); ?>
             <p>
                 <?php the_field('text_leo'); ?>
             </p>
-
         </div>
         <img src="<?= dw_asset('img/avatar-femme.svg') ?>" alt="avatar de sarah" class="img1">
         <div class="bulle2">
@@ -17,7 +16,7 @@ get_header(); ?>
         <img src="<?= dw_asset('img/avatar-homme.svg') ?>" alt="avatar de leo" class="img2">
     </section>
     <section class="presentation__easy-spacy">
-        <h1 class="presentation__title white">
+        <h1 class="presentation__title white" role="heading" aria-level="1">
             Easy Spacy
         </h1>
         <p class="presentation__text">
