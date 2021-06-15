@@ -12,11 +12,16 @@
 <body>
 <header class="top">
     <a href="http://easy-spacy.local/" class="logo"><img src="<?= dw_asset('img/logo.png') ?>" alt="logo de Easy Spacy"></a>
+    <a href="" class="more-info__header"><img src="<?= dw_asset('img/menu.png')?>" alt="icone du menu"></a>
+
     <nav class="top__menu menu" role="navigation">
         <h1 class="sro">Navigation principale</h1>
 
         <?php foreach(dw_menu('main') as $link): ?>
-            <a href="<?= $link->url; ?>" class="menu__link__start <?= dw_bem('menu__link', $link->modifiers); ?>"><?= $link->label; ?></a>
+            <a href="<?= $link->url; ?>" class="menu__link__start <?=  $link->active ?>"><?= $link->label; ?></a>
         <?php endforeach; ?>
     </nav>
+    <form id="search-bar">
+        <input type="search" name="search" placeholder="Rechercher dans le site">
+    </form>
 </header>

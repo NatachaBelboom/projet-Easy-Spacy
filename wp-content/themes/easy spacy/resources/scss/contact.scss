@@ -1,0 +1,137 @@
+.contact {
+  padding: 0px 3.75em 6.25em;
+  transition: .5s ease;
+}
+
+.formulaire {
+  padding: 3.75em 2.5em 4.375em;
+  border: 2px solid #002A3D;
+  background-color: #fff;
+  transition: .5s ease;
+}
+
+.formulaire form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1.25em;
+  transition: .5s ease;
+}
+
+
+form p {
+  width: 100%;
+}
+
+.contact__title {
+  font-size: 1.25em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+label {
+  font-size: 0.8125em;
+  font-weight: bold;
+  color: #002A3D;
+  text-align: left;
+
+}
+
+input::placeholder, textarea::placeholder {
+  font-size: 1em;
+}
+
+.formulaire input, .formulaire textarea {
+  font: 0.875em sans-serif;
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  border-bottom: 2px solid #002A3D;
+  background-color: transparent;
+}
+
+form input, form textarea {
+  padding: 1em 1em 1em 0;
+  color: #002A3D;
+}
+
+form textarea {
+  min-width: 100%;
+  max-width: 100%;
+  height: 8em;
+  min-height: 6.25em;
+  max-height: 10em;
+}
+
+form button {
+  background-color: #002A3D;
+  border: none;
+  border-radius: 10em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  color: white;
+  text-align: center;
+  display: block;
+  width: 13.88888888888889em;
+  padding: 0.5555555555555556em 0;
+}
+
+.color {
+  width: 100%;
+  height: 15.625em;
+  z-index: -3;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #E9F4F6;
+}
+
+@media screen and (min-width: 800px) {
+  .contact {
+    padding: 0 7.5em 6.25em;
+  }
+
+  .formulaire {
+    padding: 3.75em 3.75em 3.75em;
+  }
+
+  form p:nth-child(2), form p:nth-child(3) {
+    width: calc(50% - 1.25em);
+  }
+
+  form p:nth-child(4) {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1270px) {
+  .contact {
+    padding: 0px 15.625em 6.25em;
+  }
+
+  .formulaire {
+    padding: 3.75em 7.5em 4.375em;
+    border: 2px solid #002A3D;
+    background-color: #fff;
+  }
+
+  .formulaire form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1.875em;
+    row-gap: 3.125em;
+  }
+
+  form p:nth-child(2), form p:nth-child(3), form p:nth-child(4) {
+    width: calc(33% - 1.25em);
+  }
+
+}
+

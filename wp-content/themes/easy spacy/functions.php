@@ -4,7 +4,7 @@ add_action('init', 'dw_custom_post_type');
 
 function dw_custom_post_type()
 {
-    register_post_type('posts', [
+    register_post_type('capsule', [
         'label' => 'Capsules',
         'labels' => [
             'singular_name' => 'Capsules',
@@ -13,10 +13,10 @@ function dw_custom_post_type()
         'description' => 'Toutes mes capsules.',
         'public' => true,
         'menu_position' => 5,
-        'supports' => ['title', 'editor', 'thumbnail'],
+        'supports' => ['title', 'thumbnail'],
         'menu_icon' => 'dashicons-format-image',
         'rewrite' => [
-            'slug' => 'posts'
+            'slug' => 'capsules'
         ]
     ]);
 
@@ -98,7 +98,14 @@ function dw_menu($location)
         $link->classes = $result->classes[0];
         $link->url = $result->url;
         $link->label = $result->title;
-        $link->modifiers = [];
+
+        $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+
+        if ($actual_link == $link->url) {
+            $link->active = 'nav__active';
+        } elseif ($actual_link == $link->url) {
+            $link->active = 'nav__active';
+        }
 
         // Est-ce que le lien représente la page courante ?
         if (intval($result->object_id) === intval($post->ID)) {
@@ -160,7 +167,7 @@ add_action('after_setup_theme', 'dw_add_theme_supports');
 
 function dw_add_theme_supports()
 {
-    add_theme_support('post-thumbnails', ['post', 'project']);
+    add_theme_support('post-thumbnails', ['post', 'capsule']);
 }
 
 /* *****

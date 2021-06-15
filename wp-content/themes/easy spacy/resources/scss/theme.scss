@@ -2,6 +2,9 @@
 @import "header";
 @import "footer";
 @import "home-page";
+@import "about";
+@import "contact";
+@import "single_page";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
@@ -20,4 +23,12 @@
 
 html{
   font-family: 'Open Sans', sans-serif;
+}
+
+body, body * {
+  box-sizing: border-box;
+}
+
+main {
+  position: relative;
 }

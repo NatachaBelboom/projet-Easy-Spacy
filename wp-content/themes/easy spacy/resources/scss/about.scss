@@ -1,0 +1,136 @@
+.presentation__easy-spacy {
+  background-color: #002A3D;
+  padding: 1.875em 0;
+}
+
+.presentation__text {
+  padding: 0 4.285714285714286em;
+  color: #fff;
+  font-size: 0.875em;
+  line-height: 1.714285714285714em;
+
+}
+
+.presentation__title.white {
+  padding: 0 2.5em;
+  color: #fff;
+}
+
+.container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2.5em;
+}
+
+.bulle1 {
+  background-image: url("http://easy-spacy.local/wp-content/themes/easy spacy/public/img/bulleG.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: auto;
+  width: 100%;
+  transition: .5s ease;
+}
+
+.bulle1 p, .bulle2 p {
+  padding: 3.571428571428571em 4.285714285714286em;
+  text-align: center;
+  font-size: 0.875em;
+  line-height: 1.5em;
+}
+
+.bulle2 {
+  background-image: url("http://easy-spacy.local/wp-content/themes/easy spacy/public/img/bulleD.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: auto;
+  width: 100%;
+  transition: .5s ease;
+}
+
+.img1{
+  width: 9.375em;
+  height: auto;
+  padding: 1.875em 0;
+  position: relative;
+  align-self: flex-end;
+}
+.img2{
+  width: 9.375em;
+  height: auto;
+  padding: 1.875em 0 0;
+  align-self: flex-start;
+
+}
+@media screen and (min-width: 700px){
+  .bulle1, .bulle2 {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1270px) {
+  .avatars__about img {
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .avatars__about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .presentation__easy-spacy {
+    background-color: #002A3D;
+    padding: 1.875em 0;
+  }
+  .presentation__text {
+    padding: 0 16.5625em;
+    column-count: 2;
+    column-gap: 1.875em;
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  .presentation__title.white {
+    padding: 0 16.5625em;
+    color: #fff;
+
+  }
+  .img1, .img2 {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+  }
+
+  .img1 {
+    left: 50%;
+  }
+  .img2 {
+    right: 50%;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 9.375em;
+    padding: 0 8.75em 15.625em;
+  }
+  .bulle1 {
+    width: 100%;
+  }
+  .bulle1 p, .bulle2 p {
+    padding: 4.375em;
+    text-align: center;
+    line-height: 1.3125em;
+  }
+  .bulle2 {
+    width: 100%;
+  }
+
+}
