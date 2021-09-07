@@ -62,6 +62,32 @@ function dw_the_img_attributes($id, $sizes = [])
     return 'src="' . $src . '" srcset="' . $srcset . '" alt="' . $alt . '"';
 }
 
+function dw_the_thumbnail_attributes($sizes = [])
+{
+    // 1. Récupérer le thumbnail pour le post courant dans the loop
+    $thumbnail = get_post(get_post_thumbnail_id());
+    $thumbnail_meta = get_post_meta($thumbnail->ID);
+    $src = null;
+
+    // 2. Récupérer les tailles d'image qui nous intéressent & formater les tailles pour qu'elles soient utilisables dans srcset
+    $sizes = array_map(function($size) use ($thumbnail, &$src) {
+        $data = wp_get_attachment_image_src($thumbnail->ID, $size);
+
+        if(is_null($src)) {
+            $src = $data[0];
+        }
+
+        return $data[0] . ' ' . $data[1] . 'w';
+    }, $sizes);
+
+    // 4. Formater les attributs
+    $srcset = implode(', ', $sizes);
+    $alt = $thumbnail_meta['_wp_attachment_image_alt'][0] ?? null;
+
+    // 5. Retourner les attributs générés
+    return 'src="' . $src . '" srcset="' . $srcset . '" alt="' . $alt . '"';
+}
+
 
 /* *****
  * Return a menu structure for display
@@ -167,7 +193,7 @@ add_action('after_setup_theme', 'dw_add_theme_supports');
 
 function dw_add_theme_supports()
 {
-    add_theme_support('post-thumbnails', ['post', 'capsule']);
+    add_theme_support('post-thumbnails', ['capsule', 'news']);
 }
 
 /* *****

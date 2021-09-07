@@ -1,5 +1,5 @@
 .contact {
-  padding: 0px 3.75em 6.25em;
+  padding: 0px 2.75em 6.25em;
   transition: .5s ease;
 }
 
@@ -52,6 +52,7 @@ input::placeholder, textarea::placeholder {
   width: 100%;
   border-bottom: 2px solid #002A3D;
   background-color: transparent;
+  margin-bottom: 0.5em;
 }
 
 form input, form textarea {
@@ -78,6 +79,8 @@ form button {
   display: block;
   width: 13.88888888888889em;
   padding: 0.5555555555555556em 0;
+  cursor: pointer;
+  margin: 0 auto;
 }
 
 .color {

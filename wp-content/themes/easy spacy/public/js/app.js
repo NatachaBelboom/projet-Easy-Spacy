@@ -1,29 +1,259 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./wp-content/themes/easy spacy/resources/js/app.js":
 /*!**********************************************************!*\
   !*** ./wp-content/themes/easy spacy/resources/js/app.js ***!
   \**********************************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-var app = {
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ill4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ill4 */ "./wp-content/themes/easy spacy/resources/js/ill4.js");
+/* harmony import */ var _ill1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ill1 */ "./wp-content/themes/easy spacy/resources/js/ill1.js");
+/* harmony import */ var _ill2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ill2 */ "./wp-content/themes/easy spacy/resources/js/ill2.js");
+/* harmony import */ var _ill3__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ill3 */ "./wp-content/themes/easy spacy/resources/js/ill3.js");
+
+
+
+
+var game = {
+  canvas: document.querySelector('#canvas'),
+  context: null,
+  ill1: _ill1__WEBPACK_IMPORTED_MODULE_1__.default,
+  ill2: _ill2__WEBPACK_IMPORTED_MODULE_2__.default,
+  ill3: _ill3__WEBPACK_IMPORTED_MODULE_3__.default,
+  ill4: _ill4__WEBPACK_IMPORTED_MODULE_0__.default,
+  defaultWidth: 1920,
   init: function init() {
     var _this = this;
 
-    this.burgerMenu = document.querySelector('.more-info__header');
-    this.leNav = document.querySelector('.top__menu');
-    this.burgerMenu.addEventListener('click', function (e) {
-      _this.f_burger(e);
-    });
+    this.context = this.canvas.getContext('2d');
+    this.canvas.width = window.innerWidth;
+    this.ill4.init(this);
+    this.ill3.init(this);
+    this.ill2.init(this);
+    this.ill1.init(this);
+    this.canvas.height = this.ill1.frame.dh;
+    this.ill1.sprite.addEventListener('load', function () {
+      _this.animate();
+    }, false);
+    this.resize();
   },
-  f_burger: function f_burger(e) {
-    e.preventDefault();
-    console.log(this);
-    this.leNav.classList.toggle('menu__responsive');
+  animate: function animate() {
+    var _this2 = this;
+
+    this.animation = window.requestAnimationFrame(function () {
+      _this2.animate();
+    });
+    this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    this.ill4.update();
+    this.ill3.update();
+    this.ill2.update();
+    this.ill1.update();
+  },
+  renderSpriteFrame: function renderSpriteFrame(coordinates, image) {
+    this.context.drawImage(image, coordinates.sx, coordinates.sy, coordinates.sw, coordinates.sh, coordinates.dx, coordinates.dy, coordinates.dw, coordinates.dh);
+  },
+  resize: function resize() {
+    var _this3 = this;
+
+    window.addEventListener('resize', function () {
+      _this3.canvas.width = window.innerWidth;
+      _this3.canvas.height = _ill1__WEBPACK_IMPORTED_MODULE_1__.default.frame.dh;
+    });
   }
 };
-app.init();
+game.init();
+
+/***/ }),
+
+/***/ "./wp-content/themes/easy spacy/resources/js/ill1.js":
+/*!***********************************************************!*\
+  !*** ./wp-content/themes/easy spacy/resources/js/ill1.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var ill1 = {
+  game: null,
+  sprite: new Image(),
+  spriteSrc: 'http://easy-spacy.local/wp-content/themes/easy spacy/public/img/ill1.svg',
+  frame: {
+    sx: 0,
+    sy: 0,
+    sw: 1920,
+    sh: 802,
+    dx: 0,
+    dy: 0,
+    dw: 0,
+    dh: 0
+  },
+  update: function update() {
+    this.ratio = this.frame.sh / this.frame.sw;
+    this.frame.dw = this.game.canvas.width;
+    this.frame.dh = this.frame.dw * this.ratio;
+    this.game.renderSpriteFrame(this.frame, this.sprite);
+  },
+  init: function init(game) {
+    this.game = game;
+    this.ratio = this.frame.sh / this.frame.sw;
+    this.frame.dw = this.game.canvas.width;
+    this.frame.dh = this.frame.dw * this.ratio;
+    this.sprite.src = this.spriteSrc;
+  }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ill1);
+
+/***/ }),
+
+/***/ "./wp-content/themes/easy spacy/resources/js/ill2.js":
+/*!***********************************************************!*\
+  !*** ./wp-content/themes/easy spacy/resources/js/ill2.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var ill2 = {
+  game: null,
+  sprite: new Image(),
+  spriteSrc: 'http://easy-spacy.local/wp-content/themes/easy spacy/public/img/ill2.svg',
+  frame: {
+    sx: 0,
+    sy: 0,
+    sw: 1873,
+    sh: 693,
+    dx: 0,
+    dy: 0,
+    dw: 0,
+    dh: 0
+  },
+  update: function update() {
+    this.defaultRatio = this.game.canvas.width / this.game.defaultWidth;
+    this.spaceWidth = Math.abs(this.game.canvas.width - this.frame.sw * this.defaultRatio);
+    this.frame.dw = this.game.canvas.width - this.spaceWidth;
+    this.frame.dh = this.frame.dw * this.ratio;
+    this.frame.dx = this.spaceWidth / 2;
+    this.game.renderSpriteFrame(this.frame, this.sprite);
+  },
+  init: function init(game) {
+    this.game = game;
+    this.defaultRatio = this.game.canvas.width / this.game.defaultWidth;
+    this.ratio = this.frame.sh / this.frame.sw;
+    this.spaceWidth = Math.abs(this.game.canvas.width - this.frame.sw * this.defaultRatio);
+    this.frame.dw = this.game.canvas.width - this.spaceWidth;
+    this.frame.dh = this.frame.dw * this.ratio;
+    this.frame.dx = this.spaceWidth / 2;
+    this.sprite.src = this.spriteSrc;
+  }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ill2);
+
+/***/ }),
+
+/***/ "./wp-content/themes/easy spacy/resources/js/ill3.js":
+/*!***********************************************************!*\
+  !*** ./wp-content/themes/easy spacy/resources/js/ill3.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var ill3 = {
+  game: null,
+  sprite: new Image(),
+  spriteSrc: 'http://easy-spacy.local/wp-content/themes/easy spacy/public/img/ill3.svg',
+  frame: {
+    sx: 0,
+    sy: 0,
+    sw: 1598,
+    sh: 704,
+    dx: 0,
+    dy: 0,
+    dw: 0,
+    dh: 0
+  },
+  update: function update() {
+    this.defaultRatio = this.game.canvas.width / this.game.defaultWidth;
+    this.spaceWidth = Math.abs(this.game.canvas.width - this.frame.sw * this.defaultRatio);
+    this.frame.dw = this.game.canvas.width - this.spaceWidth;
+    this.frame.dh = this.frame.dw * this.ratio;
+    this.frame.dx = this.spaceWidth / 2;
+    this.game.renderSpriteFrame(this.frame, this.sprite);
+  },
+  init: function init(game) {
+    this.game = game;
+    this.defaultRatio = this.game.canvas.width / this.game.defaultWidth;
+    this.ratio = this.frame.sh / this.frame.sw;
+    this.spaceWidth = Math.abs(this.game.canvas.width - this.frame.sw * this.defaultRatio);
+    this.frame.dw = this.game.canvas.width - this.spaceWidth;
+    this.frame.dh = this.frame.dw * this.ratio;
+    this.frame.dx = this.spaceWidth / 2;
+    this.sprite.src = this.spriteSrc;
+  }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ill3);
+/*
+defaut = 1920
+frame = 1598
+ratio = frame/defaut
+calc(fenetre - (frame*ratio))
+*/
+
+/***/ }),
+
+/***/ "./wp-content/themes/easy spacy/resources/js/ill4.js":
+/*!***********************************************************!*\
+  !*** ./wp-content/themes/easy spacy/resources/js/ill4.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var ill4 = {
+  game: null,
+  sprite: new Image(),
+  spriteSrc: 'http://easy-spacy.local/wp-content/themes/easy spacy/public/img/ill4.svg',
+  frame: {
+    sx: 0,
+    sy: 0,
+    sw: 1640,
+    sh: 599,
+    dx: 0,
+    dy: 0,
+    dw: 0,
+    dh: 0
+  },
+  update: function update() {
+    this.defaultRatio = this.game.canvas.width / this.game.defaultWidth;
+    this.spaceWidth = Math.abs(this.game.canvas.width - this.frame.sw * this.defaultRatio);
+    this.frame.dw = this.game.canvas.width - this.spaceWidth;
+    this.frame.dh = this.frame.dw * this.ratio;
+    this.frame.dx = this.spaceWidth / 2;
+    this.game.renderSpriteFrame(this.frame, this.sprite);
+  },
+  init: function init(game) {
+    this.game = game;
+    this.defaultRatio = this.game.canvas.width / this.game.defaultWidth;
+    this.ratio = this.frame.sh / this.frame.sw;
+    this.spaceWidth = Math.abs(this.game.canvas.width - this.frame.sw * this.defaultRatio);
+    this.frame.dw = this.game.canvas.width - this.spaceWidth;
+    this.frame.dh = this.frame.dw * this.ratio;
+    this.frame.dx = this.spaceWidth / 2;
+    this.sprite.src = this.spriteSrc;
+  }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ill4);
 
 /***/ }),
 
@@ -33,7 +263,6 @@ app.init();
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -98,6 +327,18 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
 /******/ 		};
 /******/ 	})();
 /******/ 	

@@ -14,6 +14,9 @@
     </nav>
 </footer>
 <?php wp_footer(); ?>
-<script src="<?= dw_asset('js/app.js') ?>"></script>
+<!--<?php if (is_front_page()): ?>
+    <script src="<?= dw_asset('js/app.js') ?>"></script>
+<?php endif; ?>-->
+    <script src="<?= dw_asset('js/menu.js') ?>"></script>
 </body>
 </html>

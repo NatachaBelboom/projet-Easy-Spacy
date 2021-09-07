@@ -1,10 +1,14 @@
 <?php get_header(); ?>
-<main class="main">
+<main class="main main-index">
     <section>
+        <!--<canvas id="canvas"></canvas>-->
         <div class="landing_page">
             <h1 class="sro" role="heading" aria-level="1"><?php the_title(); ?></h1>
-            <img src="<?= dw_asset('img/landing.png')?>" alt="" class="img__landing">
-            <a href="https://www.instagram.com/easyspacy/?hl=fr" target="_blank" class="button__link blue">Rejoignez-nous sur Instagram</a>
+            <div class="img__landing">
+                <img src="<?= dw_asset('img/Landing.svg')?>" alt="">
+                <h2 class="welcome">Bienvenue sur le site de Easy Spacy</h2>
+            </div>
+            <a href="https://www.instagram.com/easyspacy/?hl=fr" target="_blank" class="button__link blue">Rejoignez-nous sur Instagram&nbsp;!</a>
         </div>
     </section>
     <section class="posts__section">
@@ -14,8 +18,8 @@
             $posts = new WP_Query([
                 'post_type' => 'capsule',
                 'posts_per_page' => 4,
-                'orderby' => 'date',
-                'order' => 'asc',
+                'orderBy' => 'date',
+                'order' => 'desc',
             ]);
 
             if ($posts->have_posts()) : while ($posts->have_posts()) : $posts->the_post(); ?>
@@ -28,8 +32,7 @@
                             <a href="<?php the_permalink(); ?>" class="post__link">
                                 <span class="sro">En savoir plus sur "<?php the_title(); ?>"</span>
                             </a>
-                            <img <?= dw_the_img_attributes(get_field('cover_img'), ['thumbnail', 'medium', 'large']); ?>
-                                    class="post__img">
+                            <img class="post__img" <?= dw_the_thumbnail_attributes(['thumbnail', 'medium', 'large']); ?>>
                         </div>
                         <div class="post__info">
                             <div class="post__interaction">
@@ -46,7 +49,7 @@
                 <p class="post__empty">Il n'y a pas encore de capsules</p>
             <?php endif; ?>
         </div>
-        <a href="http://easy-spacy.local/capsules/" class="button__link white">Toutes les capsules</a>
+        <a href="https://www.easy-spacy.natacha-belboom.be/capsules/" class="button__link white">Toutes les capsules</a>
     </section>
 
     <section class="news__section">
@@ -67,15 +70,14 @@
                             <a href="<?php the_permalink(); ?>" class="new__link">
                                 <span class="sro">En savoir plus sur "<?php the_title(); ?>"</span>
                             </a>
-                            <img <?= dw_the_img_attributes(get_field('cover_img'), ['thumbnail', 'medium', 'large']); ?>
+                            <img <?= dw_the_thumbnail_attributes(['thumbnail', 'medium', 'large']); ?>
                                     class="new__img">
                         </div>
                         <div class="new__info">
                             <h2 class="new__title" role="heading" aria-level="2"><?php the_title(); ?></h2>
                             <p class="new__newspaper"><?php the_field('newspaper-name'); ?></p>
                             <p class="new__date"><?php the_field('date'); ?></p>
-                            <a href="" class="more-info">Lire<img src="<?= dw_asset('img/next.png')?>" alt="icone de fleche"></a>
-
+                            <a href="<?php the_field('link'); ?>" target="_blank" class="more-info">Lire<img src="<?= dw_asset('img/next.png')?>" alt="icone de fleche"></a>
                         </div>
                     </div>
                 </article>
@@ -83,7 +85,7 @@
                 <p class="news__empty">Il n'y a pas encore de news</p>
             <?php endif; ?>
         </div>
-        <a href="http://easy-spacy.local/news/" class="button__link white">Toutes les news</a>
+        <a href="https://www.easy-spacy.natacha-belboom.be/news/" class="button__link white">Toutes les news</a>
     </section>
 
     <section class="avatars">
@@ -98,7 +100,7 @@
             magna aliqua. In fermentum posuere urna nec tincidunt praesent semper feugiat. Purus semper eget duis at
             tellus. Vitae ultricies leo integer malesuada nunc vel risus. Condimentum lacinia quis vel eros. Integer
             quis auctor elit sed vulputate mi sit. </p>
-        <a href="http://easy-spacy.local/a-propos/" class="button__link">En apprendre plus</a>
+        <a href="https://www.easy-spacy.natacha-belboom.be/a-propos/" class="button__link blue">En apprendre plus</a>
     </section>
 </main>
 <?php get_footer(); ?>

@@ -18,15 +18,14 @@ get_header();?>
                             <a href="<?php the_permalink(); ?>" class="new__link">
                                 <span class="sro">En savoir plus sur "<?php the_title(); ?>"</span>
                             </a>
-                            <img <?= dw_the_img_attributes(get_field('cover_img'), ['thumbnail', 'medium', 'large']); ?>
+                            <img <?= dw_the_thumbnail_attributes(['thumbnail', 'medium', 'large']); ?>
                                 class="new__img">
                         </div>
                         <div class="new__info">
-                            <h2 class="new__title" role="heading" aria-level="1"><?php the_title(); ?></h2>
+                            <h2 class="new__title" role="heading" aria-level="2"><?php the_title(); ?></h2>
                             <p class="new__newspaper"><?php the_field('newspaper-name'); ?></p>
                             <p class="new__date"><?php the_field('date'); ?></p>
-                            <a href="" class="more-info">Lire<img src="<?= dw_asset('img/next.png')?>" alt="icone de fleche"></a>
-
+                            <a href="<?php the_field('link'); ?>" target="_blank" class="more-info">Lire<img src="<?= dw_asset('img/next.png')?>" alt="icone de fleche"></a>
                         </div>
                     </div>
                 </article>
